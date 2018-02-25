@@ -1,5 +1,4 @@
 FROM debian:stretch-slim
-
 # Build environment variables
 ENV TINI_VERSION=0.17.0
 ENV DECONZ_VERSION=2.05.07
