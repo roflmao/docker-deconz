@@ -2,11 +2,11 @@ FROM debian:stretch-slim
 
 # Build environment variables
 ENV TINI_VERSION=0.17.0
-ENV DECONZ_VERSION=2.05.05
+ENV DECONZ_VERSION=2.05.07
 
 # Runtime environment variables
-ENV DECONZ_WEB_PORT=80
-ENV DECONZ_WS_PORT=443
+ENV DECONZ_WEB_PORT=10800
+ENV DECONZ_WS_PORT=10433
 
 # Add tini, start.sh, and Conbee udev data; set execute permissions
 ADD https://github.com/krallin/tini/releases/download/v${TINI_VERSION}/tini /tini
