@@ -26,7 +26,7 @@ RUN apt-get update && \
         libqt5sql5 \
         libqt5websockets5 \
         libqt5widgets5 \
-        sqlite3 modprobe && \
+        sqlite3 kmod && \
     rm -rf /var/lib/apt/lists/*
 RUN dpkg -i /deconz.deb && \
     rm -f /deconz.deb
